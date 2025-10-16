@@ -1,0 +1,26 @@
+{
+  "name": "@baguettejs/utils",
+  "version": "0.2.1",
+  "description": "Utility functions for the BaguetteJS framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "utils",
+    "typescript",
+    "helpers",
+    "baguettejs",
+    "framework"
+  ],
+  "author": "Cyprien Tertrais",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
