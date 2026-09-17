@@ -8,4 +8,13 @@ It is designed to be lightweight, dependency-free, and focused on core features 
 ## 📦 Installation
 
 ```bash
-npm install @baguettejs/utils
+bun add @baguettejs/utils
+```
+
+## Scanner
+
+```ts
+import { scanControllers } from '@baguettejs/utils';
+
+await scanControllers('src/controllers');
+```

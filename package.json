@@ -1,15 +1,18 @@
 {
   "name": "@baguettejs/utils",
-  "version": "0.2.1",
+  "version": "1.0.0",
+  "type": "module",
   "description": "Utility functions for the BaguetteJS framework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "dist/**/*.d.ts.map"
   ],
   "scripts": {
-    "build": "tsc -b tsconfig.json",
-    "clean": "rm -rf dist"
+    "build": "bun x tsc -b tsconfig.json",
+    "clean": "bun x tsc -b tsconfig.json --clean"
   },
   "keywords": [
     "utils",
@@ -22,5 +25,9 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "typescript": "^5.9.2"
   }
 }
